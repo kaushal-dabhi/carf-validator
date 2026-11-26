@@ -1,5 +1,5 @@
 {
-  "name": "carf-validator",
+  "name": "carf-xml-validator",
   "version": "0.1.0",
   "description": "Offline validator for OECD CARF XML (DAC8) files and BZSt DIP deliveries. Line numbers, plain-language fixes in English and German, zero dependencies.",
   "license": "MIT",

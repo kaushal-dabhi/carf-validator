@@ -1,11 +1,11 @@
-# carf-validator
+# carf-xml-validator
 
 Checks OECD CARF XML files (the format behind DAC8 crypto reporting in the EU) and German BZSt DIP deliveries before you upload them. It runs offline, has zero dependencies and keeps customer data on your machine.
 
 Every finding has a line number, a stable code, a sentence on what to fix in English or German, and a reference to the rule it comes from.
 
 ```
-$ npx carf-validator report.xml
+$ npx carf-xml-validator report.xml
 report.xml: FAILED (1 error, 1 warning)
   error   line 91  DOCREFID_DUPLICATE  DocRefId "DE2026FIXTURE1-R" is used more than once (also on line 32).
           DocRefIds must be unique; a duplicate makes a later correction ambiguous.
@@ -39,9 +39,9 @@ Browsers have no XSD engine, so this validator is written by hand. The element s
 Command line (Node 18 or newer):
 
 ```
-npx carf-validator report.xml
-npx carf-validator --de report.xml        # findings in German
-npx carf-validator --json report.xml      # machine-readable
+npx carf-xml-validator report.xml
+npx carf-xml-validator --de report.xml        # findings in German
+npx carf-xml-validator --json report.xml      # machine-readable
 ```
 
 Exit code 0 when no file has an error, 1 when any file has an error, 2 for bad usage. Warnings never fail the run, so it fits in CI.
@@ -49,7 +49,7 @@ Exit code 0 when no file has an error, 1 when any file has an error, 2 for bad u
 As a library:
 
 ```js
-import { validateCarf } from "carf-validator";
+import { validateCarf } from "carf-xml-validator";
 
 const result = validateCarf(xmlString);
 result.ok;          // false when any finding is an error
