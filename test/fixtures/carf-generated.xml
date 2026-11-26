@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carf:CARF_OECD xmlns:carf="urn:oecd:ties:carf:v1" xmlns:stf="urn:oecd:ties:carfstf:v5" xmlns:iso="urn:oecd:ties:isocarftypes:v1" version="1.5">
+  <carf:MessageSpec>
+    <carf:TransmittingCountry>DE</carf:TransmittingCountry>
+    <carf:ReceivingCountry>DE</carf:ReceivingCountry>
+    <carf:MessageType>CARF</carf:MessageType>
+    <carf:MessageRefId>DE2026DEFIXTURE1</carf:MessageRefId>
+    <carf:MessageTypeIndic>CARF701</carf:MessageTypeIndic>
+    <carf:ReportingPeriod>2026-12-31</carf:ReportingPeriod>
+    <carf:Timestamp>2027-07-15T09:30:00Z</carf:Timestamp>
+  </carf:MessageSpec>
+  <carf:CARFBody>
+    <carf:RCASP>
+      <carf:RCASP_ID>
+        <carf:Entity>
+          <carf:ResCountryCode>DE</carf:ResCountryCode>
+          <carf:TIN issuedBy="DE">47123456899</carf:TIN>
+          <carf:Name>Beispiel Krypto GmbH</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>DE</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>Mainzer Landstr. 1</carf:Street>
+              <carf:PostCode>60329</carf:PostCode>
+              <carf:City>Frankfurt</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:RCASP_ID>
+      <carf:Nexus>CARF906</carf:Nexus>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>DE2026FIXTURE1-R</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:RCASP>
+    <carf:CryptoUsers>
+      <carf:UserID>
+        <carf:Individual>
+          <carf:ResCountryCode>DE</carf:ResCountryCode>
+          <carf:TIN issuedBy="DE">47123456899</carf:TIN>
+          <carf:Name>
+            <carf:FirstName>Anna</carf:FirstName>
+            <carf:LastName>Beispiel</carf:LastName>
+          </carf:Name>
+          <carf:Address>
+            <carf:CountryCode>DE</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>Musterweg 1</carf:Street>
+              <carf:PostCode>50667</carf:PostCode>
+              <carf:City>Köln</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+          <carf:BirthInfo>
+            <carf:BirthDate>1990-05-04</carf:BirthDate>
+            <carf:BirthPlace>
+              <carf:City>Köln</carf:City>
+              <carf:CountryInfo>
+                <carf:CountryCode>DE</carf:CountryCode>
+              </carf:CountryInfo>
+            </carf:BirthPlace>
+          </carf:BirthInfo>
+        </carf:Individual>
+      </carf:UserID>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>USDC</carf:CryptoAsset>
+        <carf:CryptoTransferIn>
+          <carf:TransferType>CARF506</carf:TransferType>
+          <carf:NumberofTransactions>2</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">1500.01</carf:Amount>
+          <carf:NumberofUnits>1570.123456</carf:NumberofUnits>
+        </carf:CryptoTransferIn>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>USDC</carf:CryptoAsset>
+        <carf:CryptoFiatOut>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">1200.00</carf:Amount>
+          <carf:NumberofUnits>1250</carf:NumberofUnits>
+        </carf:CryptoFiatOut>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>ETH</carf:CryptoAsset>
+        <carf:CryptoTransferOut>
+          <carf:TransferType>CARF606</carf:TransferType>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">300.00</carf:Amount>
+          <carf:NumberofUnits>0.1</carf:NumberofUnits>
+        </carf:CryptoTransferOut>
+      </carf:RelevantTransactions>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>DE2026FIXTURE1-U00001</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:CryptoUsers>
+    <carf:CryptoUsers>
+      <carf:UserID>
+        <carf:Entity>
+          <carf:ResCountryCode>DE</carf:ResCountryCode>
+          <carf:TIN issuedBy="DE">47123456899</carf:TIN>
+          <carf:Name>Beispiel GmbH</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>DE</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>Musterweg 2</carf:Street>
+              <carf:PostCode>60311</carf:PostCode>
+              <carf:City>Frankfurt</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:UserID>
+      <carf:ControllingPerson>
+        <carf:Individual>
+          <carf:ResCountryCode>DE</carf:ResCountryCode>
+          <carf:TIN issuedBy="DE">47123456899</carf:TIN>
+          <carf:Name>
+            <carf:FirstName>Anna</carf:FirstName>
+            <carf:LastName>Beispiel</carf:LastName>
+          </carf:Name>
+          <carf:Address>
+            <carf:CountryCode>DE</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>Musterweg 1</carf:Street>
+              <carf:PostCode>50667</carf:PostCode>
+              <carf:City>Köln</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+          <carf:BirthInfo>
+            <carf:BirthDate>1990-05-04</carf:BirthDate>
+            <carf:BirthPlace>
+              <carf:City>Köln</carf:City>
+              <carf:CountryInfo>
+                <carf:CountryCode>DE</carf:CountryCode>
+              </carf:CountryInfo>
+            </carf:BirthPlace>
+          </carf:BirthInfo>
+        </carf:Individual>
+        <carf:CtrlgPersonType>CARF801</carf:CtrlgPersonType>
+      </carf:ControllingPerson>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:TransferWallet>
+          <carf:Amount currCode="EUR">2000.00</carf:Amount>
+          <carf:NumberofUnits>0.03</carf:NumberofUnits>
+          <carf:AltValuation>CARF1002</carf:AltValuation>
+        </carf:TransferWallet>
+      </carf:RelevantTransactions>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>DE2026FIXTURE1-U00002</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:CryptoUsers>
+  </carf:CARFBody>
+</carf:CARF_OECD>

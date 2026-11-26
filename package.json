@@ -1,0 +1,57 @@
+{
+  "name": "carf-validator",
+  "version": "0.1.0",
+  "description": "Offline validator for OECD CARF XML (DAC8) files and BZSt DIP deliveries. Line numbers, plain-language fixes in English and German, zero dependencies.",
+  "license": "MIT",
+  "author": "Stablewerk (https://stablewerk.com)",
+  "homepage": "https://stablewerk.com/en/carf-validator",
+  "keywords": [
+    "carf",
+    "dac8",
+    "oecd",
+    "crypto",
+    "tax",
+    "xml",
+    "validator",
+    "bzst",
+    "ksttg",
+    "casp",
+    "mica"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "carf-validate": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "test": "node --experimental-strip-types --test test/carf.test.ts",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaushal-dabhi/carf-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaushal-dabhi/carf-validator/issues"
+  }
+}
